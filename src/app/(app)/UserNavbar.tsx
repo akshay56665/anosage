@@ -1,14 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { User } from "next-auth";
-import { signOut, useSession } from "next-auth/react";
+import { signOut } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
 function UserNavbar() {
-  const { data: session } = useSession();
-  const user: User = session?.user as User;
   const router = useRouter();
 
   const handleLogOut = async () => {
