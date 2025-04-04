@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <nav className="p-4 md:p-6 shadow-md bg-gray-100">
-      <div className="container flex flex-col md:flex-row justify-between items-center">
+      <div className="container flex flex-row justify-between items-center">
         <Link href="/" className="text-2xl font-bold mb-4 md:mb-0">
           ReviewKit
         </Link>
